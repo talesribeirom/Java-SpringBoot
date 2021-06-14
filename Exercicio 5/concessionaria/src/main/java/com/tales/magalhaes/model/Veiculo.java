@@ -50,12 +50,12 @@ public class Veiculo {
 	@JsonProperty(value = "vendido")
 	Boolean Vendido;
 	
-	@Column(name="criado", length = 20)
+	@Column(name="criado")
 	@JsonProperty(value = "criado", access = JsonProperty.Access.READ_ONLY)
 	@CreationTimestamp
 	Date Criado;
 	
-	@Column(name="atualizado", length = 20)
+	@Column(name="atualizado")
 	@JsonProperty(value = "atualizado", access = JsonProperty.Access.READ_ONLY)
 	@UpdateTimestamp
 	Date Atualizado;

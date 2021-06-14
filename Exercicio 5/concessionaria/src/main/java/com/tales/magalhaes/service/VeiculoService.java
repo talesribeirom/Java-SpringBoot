@@ -31,7 +31,7 @@ public class VeiculoService {
   }
 
   public void deletar(Long id) {
-	  veiculoRepository.delete(findById(id));
+	veiculoRepository.delete(findById(id));
   }
 
   public Veiculo editar(Veiculo veiculo) {
@@ -43,15 +43,15 @@ public class VeiculoService {
   }
   
   public List<String> findQtdMarca() {
-		return veiculoRepository.findQtdMarca();
-	  }
+	return veiculoRepository.findQtdMarca();
+  }
   
   public int naoVendidos() {
-	  return veiculoRepository.naoVendidos();
+	return veiculoRepository.naoVendidos();
   }
   
   public List<Veiculo> ultimaSemana(){
-	  return veiculoRepository.ultimaSemana();
+	return veiculoRepository.ultimaSemana();
   }
 
 }

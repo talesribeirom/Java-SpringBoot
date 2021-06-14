@@ -56,11 +56,12 @@ public class VeiculoController {
 	}
 	
 	//Retorna a quantidade de veiculos por marca
-		@GetMapping(path = "/veiculos/marca")
-		@ResponseBody
-		public ResponseEntity<List<String>> findQtdMarca() {
-		    return new ResponseEntity<>(veiculoService.findQtdMarca(), HttpStatus.OK);
-		}
+	@GetMapping(path = "/veiculos/marca")
+	@ResponseBody
+	public ResponseEntity<List<String>> findQtdMarca() {
+		return new ResponseEntity<>(veiculoService.findQtdMarca(), HttpStatus.OK);
+	}
+	
 	//Retorna os veiculos cadastrados na ultima semana
 	@GetMapping(path = "/veiculos/ultimasemana")
 	public ResponseEntity<List<Veiculo>> ultimaSemana() {
