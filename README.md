@@ -30,7 +30,7 @@ Em `Multiplos.java` está a estrutura necessária para o cálculo de números m�
 > Aproveitando para conhecer um pouco sobre frameworks Java, área a qual não tive contato anteriores, tentei realizar a criação do CRUD utilizando o SpringBoot, utilizado juntamente com Spring Data JPA, MySQL como nosso banco de dados e Hibernate para o mapeamento dos dados.
 
 Para executar o projeto, é necessário que possua o Maven e o MySql (utilizado versão 8) instalado.
-O MySQL será responsável por armazenar os dados da aplicação. Não é necessário criar nenhuma tabela a aplicação fará automaticamente, apenas que o banco esteja conectado a máquina local e que o mesmo tenha login e senha `root`. Esses dados podem ser alterados no arquivo:
+O MySQL será responsável por armazenar os dados da aplicação. Não é necessário criar nenhuma tabela pois a aplicação fará automaticamente. É preciso apenas que o banco esteja conectado a máquina local e que o mesmo tenha login e senha `root`. Esses dados podem ser alterados no arquivo:
 -  `/src/main/resources/application.properties`
 
 É necessário instalar as dependências do projeto e só depois, executar o mesmo. Para isso navegue até a raiz do projeto onde se encontra o arquivo `pom.xml` com configurações e injeção de dependência e execute:
@@ -39,7 +39,7 @@ $ mvn install
 $ mvn spring-boot:run
 ```
 
-O projeto foi configurado e rodado em ambiente Linux (Ubuntu 20.04) e os comandos podem variar se executado em outro sistema operacional e podem ser executados pela interface do Eclipse com Spring Tool Suite 4 instalado. A aplicação utiliza a versão 11 do Java e 2.5.1 do Spring Boot.
+O projeto foi configurado e rodado em ambiente Linux (Ubuntu 20.04) e os comandos podem variar se executado em outro sistema operacional. Eles podem ser executados pela interface do Eclipse com Spring Tool Suite 4 instalado. A aplicação utiliza a versão 11 do Java e 2.5.1 do Spring Boot.
 
 ### Testando a aplicação
 
