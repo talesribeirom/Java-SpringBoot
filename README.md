@@ -100,3 +100,8 @@ PUT
 
 	- [/veiculos/{id}](http://localhost:8080/veiculos/{id})
 
+
+### Testes Unitários
+
+Devido ao uso do Data JPA Spring, testes unitários são desnecessários pela forma como foi arquiteturada a aplicação. Neste caso, seria ideal realizar testes de integração.
+
